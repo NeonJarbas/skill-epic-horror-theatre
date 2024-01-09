@@ -13,8 +13,8 @@ class EpicHorrorTheatreSkill(OVOSCommonPlaybackSkill):
                                    "res", "epichorrortheatre.json"))
         self.supported_media = [MediaType.RADIO_THEATRE,
                                 MediaType.AUDIOBOOK]
-        self.default_bg = join(dirname(__file__), "ui", "bg.jpg")
-        self.skill_icon = join(dirname(__file__), "ui", "icon.png")
+        self.default_bg = join(dirname(__file__), "res", "bg.jpg")
+        self.skill_icon = join(dirname(__file__), "res", "icon.png")
         super().__init__(*args, **kwargs)
 
         self.register_ocp_keyword(MediaType.AUDIOBOOK,
